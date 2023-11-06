@@ -1,0 +1,10 @@
+.title {
+	text-align: center;
+	text-decoration: underline;
+	font-family: 'Cutive', serif;
+}
+
+span:hover {
+	color: blue !important;
+}
+

@@ -1,0 +1,43 @@
+* {
+	font-family: monospace; 
+	background-color: #fff;	
+}
+
+ul{
+    display: grid;
+	gap: 0px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	list-style-type: none;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: blue;
+}
+
+abbr {
+	text-decoration: none;
+}
+
+.table{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+td, th, table {
+	border: 1px inset black;
+	border-collapse: collapse;
+}
+
+.imagens{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}

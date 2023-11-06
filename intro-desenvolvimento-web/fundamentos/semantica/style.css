@@ -1,0 +1,52 @@
+* {
+	font-family:system-ui;
+} 
+
+.titulo{
+	text-align: center;
+	font-size: 18pt;
+}
+
+.navegacao {
+	background-color: #fff;
+
+}
+
+nav > ul {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	/*gap: 0px;*/
+	list-style-type: none;
+}
+
+a {
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+
+}
+
+a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+a:visited {
+/*	color: blueviolet;*/
+}
+
+.conteudo p:nth-child(2){
+	color: red;
+}
+
+.conteudo p:nth-child(4){
+	background-color: rgb(177, 114, 236, 0.5);
+	width: 50vw;
+	margin: auto;
+}
+
+footer {
+	text-align: center;
+}

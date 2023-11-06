@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 16px;
+}
+
+.titulo {
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+h1 {
+	font-size: 28pt;
+}
+
+.navegacao {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 22px;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	font-family: monospace;
+	font-size: 10pt;
+	font-weight: 600;
+	color: #000000;
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
