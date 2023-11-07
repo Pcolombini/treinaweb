@@ -1,0 +1,26 @@
+* {
+	background-color: #252525;
+
+}
+
+.conteudo > h2 {
+	text-align: center;
+	font-family: 'Monoton', sans-serif;
+	font-weight: 400;
+	font-size: 48px;
+}
+
+.conteudo {
+	text-align: justify;
+	background-color: black;
+	color: gainsboro;
+	font-family: 'Nova Mono', monospace;
+	line-height: 120%;
+	font-size: 22pt;
+	border: 1px solid red;
+}
+
+.conteudo p:nth-child(3) {
+	font-family: 'Dancing Script', cursive;
+	border: inherit;
+}
