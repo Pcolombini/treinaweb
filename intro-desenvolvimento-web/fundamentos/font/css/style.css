@@ -1,0 +1,44 @@
+* {
+	line-height: 175%;
+}
+
+.titulo {
+	text-align: center;
+	font-weight: 400;
+	font-size: 60px;
+	font-family: 'Monoton', sans-serif;
+}
+
+.conteudo {
+	text-align: justify;
+}
+
+.conteudo p:nth-child(1) {
+	line-height: 200%;
+	color: blue;
+	font-family: system-ui;
+}
+
+.conteudo p:nth-child(2) {
+	line-height: 175%;
+	color: darkred;
+	font-family: sans-serif;
+}
+
+.conteudo p:nth-child(3) {
+	line-height: 150%;
+	color: green;
+	font-family: monospace;
+}
+
+.conteudo p:nth-child(4) {
+	line-height: 100%;
+	color:purple;
+	font-family: fantasy;
+}
+
+.externa {
+	text-align: justify;
+	line-height: 75%;
+	font-family:'Bungee Spice', sans-serif ;
+}
