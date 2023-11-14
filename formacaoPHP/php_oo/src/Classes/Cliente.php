@@ -6,5 +6,4 @@ class Cliente
     public $idade;
     public $endereco;
     public $telefone;
-
 }

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 class Fornecedor
 {
@@ -6,5 +6,4 @@ class Fornecedor
     public $razaoSocial;
     public $nomeFantasia;
     public $cnpj;
-
 }
