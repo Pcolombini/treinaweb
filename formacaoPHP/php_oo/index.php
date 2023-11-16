@@ -1,5 +1,7 @@
 <?php
 
+echo "<html lang='pt-br'>";
+
 require_once './src/Classes/Produto.php';
 require_once './src/Classes/Cliente.php';
 require_once './src/Classes/Fornecedor.php';
@@ -31,3 +33,23 @@ $cli->telefone= "(11) xxxxx-xxxx";
 
 var_dump($cli);
 $cli->comprar();
+
+# INSTANCIANDO CLASSE DINÂMICAMENTE
+
+$nomeClasse = "Fornecedor";
+
+$instancia = new $nomeClasse;
+
+var_dump($instancia);
+
+$cli2 = new $cli;
+
+var_dump($cli2);
+
+$nomeClasse2 = get_class($cli);
+$cli3 = new $nomeClasse2;
+$cli3->nome = "Eduardo";
+
+var_dump($cli);
+var_dump($cli2);
+var_dump($cli3);
