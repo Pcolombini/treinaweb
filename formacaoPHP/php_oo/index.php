@@ -21,3 +21,13 @@ $prod2->preco = 1.9;
 
 
 var_dump($prod2);
+
+$cli = new Cliente();
+
+$cli->nome = "João";
+$cli->idade = 40;
+$cli->endereco = "São Paulo";
+$cli->telefone= "(11) xxxxx-xxxx";
+
+var_dump($cli);
+$cli->comprar();
