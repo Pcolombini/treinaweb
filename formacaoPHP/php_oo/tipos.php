@@ -1,8 +1,12 @@
+<?php 
+    // DECLARANDO O MODO ESTRITO
+    declare(strict_types= 1); 
+    require_once "src/Classes/Fornecedor.php";
+?>
 <!DOCTYPE html>
 <html lang="pr-br">
 
 <head>
-    <?php require_once "src/Classes/Fornecedor.php" ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +17,7 @@
         * {
             margin: 0;
             padding: 0;
+            
             font-family: 'Atkinson Hyperlegible', sans-serif;
         }
 
@@ -36,7 +41,7 @@
             margin: 20px 50px;
         }
 
-        .texto-intro p{
+        .texto-intro p {
             margin: 18px 0;
         }
     </style>
@@ -56,18 +61,19 @@
         </section>
         <section class="texto texto-intro php">
             <p>
-                <?php 
-                    $fornecedor = new Fornecedor;
+                <?php
+                $fornecedor = new Fornecedor;
 
-                    $fornecedor->cnpj = "12123015/0001-87";
-                    $fornecedor->nomeFantasia = "Meu negócio";
-                    $fornecedor->razaoSocial = "Brilha estrelinha";
+                $fornecedor->cnpj = "12123015/0001-87";
+                $fornecedor->nomeFantasia = "Meu negócio";
+                $fornecedor->razaoSocial = "Brilha estrelinha";
 
-                    var_dump($fornecedor);
-                    $fornecedor->autorizar(new class {
-                        public string $nome = "João";
-                        public string $senha = "123456";
-                    });
+                var_dump($fornecedor);
+                $fornecedor->autorizar(new class
+                {
+                    public string $nome = "João";
+                    public string $senha = "123456";
+                });
                 ?>
             </p>
         </section>
