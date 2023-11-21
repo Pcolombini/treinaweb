@@ -32,9 +32,9 @@ body {
     font-size: 18px;
 }
 
-.order-list ol {
+/* .order-list ol {
     
-}
+} */
 
 .unorder-list{
     margin: 30px;
@@ -47,6 +47,6 @@ body {
     font-size: 18px;
 }
 
-.unorder-list ol {
-    
+.unorder-list ul {
+    list-style: url('./img/circle.png');
 }
