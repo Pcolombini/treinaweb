@@ -48,7 +48,7 @@ body {
 }
 
 .unorder-list-ul {
-    list-style: url('./img/circle.png');
+    list-style: url('/apresentacaoDeDados/img/circle.png');
 }
 
 .order-list-li ul {
