@@ -16,27 +16,35 @@
             </h1>
         </section>
     </header>
-    <!-- LISTAS ORDENADAS -->
-    <section class="order-list">
-        <h2>Listas Ordenadas</h2>
-        <ol start="4" reversed>
-           <li>Maçã</li>
-           <li value="3">Limão</li>
-           <li>Laranja</li>
-           <li>Abacaxi</li> 
-        </ol>
-    </section>
-
     <!-- LISTAS NÃO-ORDENADAS -->
     <section class="unorder-list">
         <h2>Listas Não-Ordenadas</h2>
-        <ul>
-           <li>Maçã</li>
-           <li>Limão</li>
-           <li>Laranja</li>
-           <li>Abacaxi</li> 
+        <ul class="unorder-list-ul">
+            <li>Maçã</li>
+            <li>Limão</li>
+            <li>Laranja</li>
+            <li>Abacaxi</li> 
         </ul>
     </section>
+
+    <!-- LISTAS ORDENADAS -->
+    <section class="order-list">
+        <h2>Listas Ordenadas</h2>
+        <ol>
+            <li class="order-list-li">Frutas
+                <ul class="unorder-list-ul">
+                    <li>Maçã</li>
+                    <li>Limão</li>
+                    <li>Laranja</li>
+                    <li>Abacaxi</li> 
+                </ul>
+            </li>
+            <li>Legumes</li>
+            <li>Carnes</li>
+            <li>Temperos</li> 
+        </ol>
+    </section>
+
 </body>
 
 </html>
