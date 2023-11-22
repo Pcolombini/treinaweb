@@ -3,11 +3,17 @@
 require_once "../src/Email/Envio.php";
 require_once "../src/SMS/Envio.php";
 
-$email = new \App\Email\Envio;
-$sms = new \App\SMS\Envio;
+use App\Email\Envio as Email;
+use App\SMS\Envio as SMS;
+use const App\Email\VERSAO;
+use function App\Email\validar;
 
-echo "Versão: ".\App\Email\VERSAO . "<br>";
-\App\Email\validar("paschoal.colombini@gmail.com");
+$email = new Email;
+$sms = new SMS;
+
+echo "Versão: ". VERSAO . "<br>";
+
+validar("paschoal.colombini@gmail.com");
 
 var_dump($email);
 var_dump($sms);

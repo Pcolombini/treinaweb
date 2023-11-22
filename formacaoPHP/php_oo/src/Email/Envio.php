@@ -2,12 +2,16 @@
 
 namespace App\Email;
 
+use App\Email\Adaptadores\Mailgun\Adptador as Mailgun;
+use App\Email\Adaptadores\SES\Adaptador as Ses;
+
+
 const VERSAO = 1.0;
 class Envio
 {
     public function enviar(): void
     {
-        $adptador = new Adaptadores\Mailgun\Adptador;
+        $adptador = new Mailgun;
 
         $transporte = new Transporte;
 
@@ -19,6 +23,17 @@ class Envio
 
         var_dump($adptador, $transporte, $obj, $cli);
     }
+
+    public function m1()
+    {
+        $adptador = new Mailgun;
+    }
+
+    public function m2()
+    {
+        $adptador = new Ses;
+    }
+
 }
 
 function validar(string $mail): void
