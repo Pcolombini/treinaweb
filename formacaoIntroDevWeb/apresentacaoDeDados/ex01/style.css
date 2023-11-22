@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+    background-color: gray;
+}
+
+table,
+th,
+td {
+    border: 1px solid grey;
+    border-spacing: 0px;
+}
+
+th,
+td {
+    padding: 12px;
+}
+
+th {
+    color: white;
+    font-size: 1.3rem;
+    text-align: start;
+}
+
+td {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size:1.1rem;
+}
