@@ -11,7 +11,13 @@ class Envio
 
         $transporte = new Transporte;
 
-        var_dump($adptador, $transporte);
+        $obj = new \stdClass;
+
+        $cli = new \Cliente;
+
+        \var_dump($adptador, $transporte, $obj, $cli);
+
+        var_dump($adptador, $transporte, $obj, $cli);
     }
 }
 
