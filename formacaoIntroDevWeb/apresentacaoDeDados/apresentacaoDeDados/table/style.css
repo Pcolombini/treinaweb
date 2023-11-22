@@ -3,7 +3,54 @@ table {
     margin: 0 0 30px 0;
 }
 
-table, th, td {
-    border: 1px solid black;
-    border-collapse:collapse;
+.tabela-1,
+.tabela-1 th,
+.tabela-1 td,
+.tabela-2,
+.tabela-2 th,
+.tabela-2 td {
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    border-collapse: collapse;
+}
+
+.tabela-1 th {
+    background-color: bisque;
+    font-size: 1.3rem;
+    width: calc(100%/7);
+}
+
+.tabela-1 td {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.tabela-1 td:hover {
+    background-color: rgba(0, 0, 255, 0.3);
+    cursor: pointer;
+}
+
+.tabela-1 td:active {
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+.tabela-2 tr:first-child {
+    background-color: rgba(0, 128, 0, 0.6);
+}
+
+.tabela-2 tr:nth-child(2) {}
+
+.tabela-3 {
+    text-align: left;
+    border-spacing: 5px;
+}
+
+
+.tabela-3,
+.tabela-3 td,
+.tabela-3 th {
+    border: 1px solid rgba(0, 0, 0, 0.308);
+}
+
+.tabela-3 tr:nth-child(odd) {
+    background-color: pink;
 }
