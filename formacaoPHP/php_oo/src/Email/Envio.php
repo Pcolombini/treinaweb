@@ -2,11 +2,15 @@
 
 namespace App\Email;
 
-use App\Email\Adaptadores\Mailgun\Adptador as Mailgun;
+use App\Email\Adaptadores\Mailgun\Adaptador as Mailgun;
+
 use App\Email\Adaptadores\SES\Adaptador as Ses;
+
+use App\Classes\Cliente;
 
 
 const VERSAO = 1.0;
+
 class Envio
 {
     public function enviar(): void
@@ -17,7 +21,7 @@ class Envio
 
         $obj = new \stdClass;
 
-        $cli = new \Cliente;
+        $cli = new Cliente;
 
         \var_dump($adptador, $transporte, $obj, $cli);
 
