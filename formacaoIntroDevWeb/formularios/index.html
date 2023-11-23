@@ -7,8 +7,8 @@
     <title>Formulários</title>
     <style>
         body {
-            font-weight: 600;
-            font-size: 18pt;
+            font-weight: 400;
+            font-size: 12pt;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
     </style>
@@ -16,18 +16,13 @@
 
 <body>
     <form action="">
-        <label for="cor">Selecione uma cor</label>
-        <input type="color" name="cor" id="cor">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" minlength="3" maxlength="12" size="30" placeholder="Digite seu nome" autofocus>
         <br>
-        <label for="data">Selecione uma data</label>
-        <input type="week" name="data" id="data">
+        <label for="telefone">Telefone</label>
+        <input type="text" name="telefone" id="telefone" placeholder="Digite seu número" required>
         <br>
-        <label for="hidden">aqui tem um input hidden</label>
-        <input type="hidden" name="data" id="data">
-        <br>
-        <label for="busca">Faça uma busca</label>
-        <input type="search" name="busca" id="busca">
-        <br>
+        <button type="submit">Enviar</button>
         <button type="reset">Limpar</button>
     </form>
 </body>
