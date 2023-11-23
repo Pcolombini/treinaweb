@@ -15,7 +15,7 @@ class Cliente
         $this->idade = $idade;
     }
 
-    public function __set(string $nomePropriedade, $valorPropriedade)
+    public function __set(string $nomePropriedade, $valorPropriedade): void
     {
         if ($nomePropriedade == 'cpf') {
             $this->cpf = str_replace('.','',$valorPropriedade);
@@ -29,7 +29,7 @@ class Cliente
         return ['nome', 'idade'];
     }
 
-    public function __wakeup()
+    public function __wakeup(): void
     {
         return;
         // $this->tipo = "Serializado";
@@ -45,12 +45,12 @@ class Cliente
         var_dump($nomeMetodo, $argMetodo); 
     }
 
-    public function __invoke(bool $status)
+    public function __invoke(bool $status): void
     {
         $this->status = $status;
     }
 
-    public function __get(string $nomePropriedade)
+    public function __get(string $nomePropriedade): string
     {
         return "A propriedade não existe";
     }
