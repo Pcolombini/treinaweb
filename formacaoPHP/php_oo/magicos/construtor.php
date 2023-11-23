@@ -20,4 +20,6 @@ echo "<br> $cliSerial";
 
 $cli2 = unserialize($cliSerial);
 
+echo "<br>$cli";
+
 var_dump($cli, $cli2);

@@ -31,7 +31,13 @@ class Cliente
 
     public function __wakeup()
     {
-        $this->tipo = "Serializado";
+        return;
+        // $this->tipo = "Serializado";
+    }
+
+    public function __toString(): string
+    {
+        return $this->nome . ", " . $this->idade . " anos";
     }
 
     public function __call(string $nomeMetodo, array $argMetodo): void
