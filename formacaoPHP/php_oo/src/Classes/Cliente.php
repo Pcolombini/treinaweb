@@ -24,6 +24,16 @@ class Cliente
         }
     }
 
+    public function __call(string $nomeMetodo, array $argMetodo): void
+    {
+        var_dump($nomeMetodo, $argMetodo); 
+    }
+
+    public function __invoke(bool $status)
+    {
+        $this->status = $status;
+    }
+
     public function __get(string $nomePropriedade)
     {
         return "A propriedade não existe";

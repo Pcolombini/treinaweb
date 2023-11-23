@@ -10,4 +10,8 @@ $cli = new Cliente('Paschoal', '21 9 9999 9999', 32);
 
 echo $cli->cidade;
 
+$cli->alterar("Elton ", 29);
+
+$cli(true);
+
 var_dump($cli);
