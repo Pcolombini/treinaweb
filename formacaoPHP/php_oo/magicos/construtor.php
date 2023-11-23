@@ -8,4 +8,6 @@ $cli = new Cliente('Paschoal', '21 9 9999 9999', 32);
 
 // exit;
 
+echo $cli->cidade;
+
 var_dump($cli);

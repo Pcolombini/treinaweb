@@ -15,9 +15,18 @@ class Cliente
         $this->idade = $idade;
     }
 
-    public function __destruct()
+    public function __set(string $nomePropriedade, $valorPropriedade)
     {
-        echo "O obj foi destruido";
+        if ($nomePropriedade == 'cpf') {
+            $this->cpf = str_replace('.','',$valorPropriedade);
+        } else {
+            $this->$nomePropriedade = $valorPropriedade;
+        }
+    }
+
+    public function __get(string $nomePropriedade)
+    {
+        return "A propriedade não existe";
     }
 
     public function comprar(): void
