@@ -24,6 +24,16 @@ class Cliente
         }
     }
 
+    public function __sleep(): array
+    {
+        return ['nome', 'idade'];
+    }
+
+    public function __wakeup()
+    {
+        $this->tipo = "Serializado";
+    }
+
     public function __call(string $nomeMetodo, array $argMetodo): void
     {
         var_dump($nomeMetodo, $argMetodo); 

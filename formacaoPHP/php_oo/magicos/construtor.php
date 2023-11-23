@@ -10,8 +10,14 @@ $cli = new Cliente('Paschoal', '21 9 9999 9999', 32);
 
 echo $cli->cidade;
 
-$cli->alterar("Elton ", 29);
+// $cli->alterar("Elton ", 29);
 
-$cli(true);
+// $cli(true);
 
-var_dump($cli);
+$cliSerial = serialize($cli);
+
+echo "<br> $cliSerial";
+
+$cli2 = unserialize($cliSerial);
+
+var_dump($cli, $cli2);
