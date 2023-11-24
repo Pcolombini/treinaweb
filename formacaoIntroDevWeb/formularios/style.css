@@ -5,7 +5,7 @@
 }
 
 body {
-    margin: auto 8px;
+    margin: 8px;
 }
 
 .form-user {
@@ -23,7 +23,7 @@ body {
 .form-user textarea {
     width: 100%;
     border: none;
-    background-color: rgb(128,128,128,0.3);
+    background-color:  #bababa;
     border-radius:3px;
     padding: 3px;
 }
@@ -34,9 +34,10 @@ body {
 }
 
 .form-user button {
+    font-weight: 600;
     height: 25px;
     border-radius: 3px;
-    background-color: rgb(0,128,0,0.7);
+    background-color: #3dd26a;
     border: none;
 }
 
@@ -44,4 +45,20 @@ body {
     cursor: pointer;
     opacity: 0.7;
     transition: .3s;
+}
+
+.name-mail {
+    display: flex;
+    background-color: #bababa;
+    align-items: center;
+    border-radius: 3px;
+    padding: 1px;
+}
+
+.name-mail img {
+    width: 30px;
+    height: 30px;
+}
+
+.form-user input[type=email] {
 }
