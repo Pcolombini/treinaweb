@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <main class="conteudo">
+        <header class="titulo">
+            <img src="../img/treinaweb-logo.svg" alt="logo-treinaweb">
+        </header>
+        <section class="formulario">
+            <form action="" method="post" class="form-formulario">
+                <fieldset>
+                    <h2 class="titulo">Acesse a sua conta</h2>
+                    <section>
+                        <div class="login">
+                            <label for="usuario">CPF ou E-mail</label>
+                        </div>
+                        <div class="login-input">
+                            <input type="text" name="usuario" id="usuario" placeholder="CPF ou E-mail" required  title="Digite seu CPF ou E-mail">
+                        </div>
+                        <div class="login">
+                            <label for="usuario">Senha <a href="#">Receber
+                                    link de acesso no e-mail</a> </label>
+                        </div>
+                        <div class="login-input">
+                            <input type="password" name="usuario" id="usuario" placeholder="Senha" required  title="A senha deve ter mínimo de 8 caracteres e máximo de 128 caracteres" pattern="{8 - 128}">
+                        </div>
+                    </section>
+                    <button type="submit" class="login-btn">Entrar na minha conta</button>
+                </fieldset>
+                <fieldset>
+                    <legend>OU</legend>
+                    <a href="#">
+                        <button class="login-btn login-btn-google">
+                            <img src="../img/google-icon.png" alt="logo google">
+                            Fazer login com o Google
+                        </button>
+                    </a>
+                </fieldset>
+            </form>
+        </section>
+        <p>Não tem uma conta? Veja<a href="https://www.treinaweb.com.br/">nossos planos</a></p>
+    </main>
+</body>
+
+</html>

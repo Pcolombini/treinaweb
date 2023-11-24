@@ -1,0 +1,169 @@
+:root {
+    --background-body: #f6f8fb;
+    --background-form: #fff;
+    --color-border:#dce0e5;
+    --background-focus: rgba(128, 169, 211, 0.507);
+    --background-focus-shadow: rgba(24, 36, 51, .06);
+    --background-button: #2fb344;
+    --color-link: #0054a6;
+    --color-font: #182433;
+    --color-font-secundary: #667382;
+    --font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+}
+
+body {
+    /* background-color: var(--background-body); */
+    background-color: var(--background-body);
+    font-family: var(--font-family);
+    color: var(--color-font);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.conteudo .titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo p {
+    display: flex;
+    justify-content: center;
+    color: var(--color-font-secundary);
+}
+
+.conteudo p a {
+    margin-left: 2px;
+}
+
+.titulo img {
+    width: 200px;
+    margin: 50px 0 25px 0;
+    
+}
+
+.formulario {
+    color: var(--color-font);
+    border-radius: 3px;
+    max-width: 537px;
+    width: 100%;
+    margin: auto;
+    background-color: var(--background-form);
+}
+
+.form-formulario {
+    color: var(--color-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.form-formulario fieldset {
+    color: var(--color-font);
+    margin: 0;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    text-align: center;
+    font-size: 10px;
+    color: var(--color-font-secundary);
+    padding: 16px;
+}
+
+.form-formulario fieldset legend {}
+
+.form-formulario .titulo {
+    color: var(--color-font);
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.form-formulario .login label {
+    color: var(--color-font);
+    display: flex;
+    justify-content: space-between;
+    width: 496px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 8px 0 0;
+}
+
+.form-formulario .login label a {
+    font-weight: 400;
+}
+
+.form-formulario .login-input {
+    margin: 8px;
+
+}
+
+.form-formulario .login-input input {
+    color: var(--color-font-secundary);
+    font-weight: 100;
+    border: 1px solid var(--color-border);
+    box-shadow: 0px 1px var(--color-border);
+    border-radius: 4px;
+    width: 468px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.form-formulario .login-input input:focus {
+    margin: 0;
+    outline: none;
+    border: 4px solid var(--background-focus);
+    box-shadow: 0 1px var(--background-focus-shadow);
+    border-radius: 6px;
+}
+
+.form-formulario .login-btn {
+    background-color: var(--background-button);
+    color: #FCFDFE;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    width: 95%;
+    margin: 12px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-formulario .login-btn:hover {
+    opacity: 0.8;
+}
+
+.form-formulario .login-btn-google {
+    background-color: var(--background-form);
+    color: var(--color-font);
+    border: 1px solid var(--color-border);
+}
+
+.form-formulario .login-btn-google:hover {
+    opacity: 1;
+    border: 1px solid black;
+}
+
+.form-formulario .login-btn-google img {
+    width: 20px;
+    height: 20px;
+    margin: 0 7px -6px 0;
+}
