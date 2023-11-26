@@ -1,0 +1,13 @@
+.um {
+    max-width: 600px;
+    min-width: 500px;
+    margin: auto;
+}
+
+p {
+    /* text-align: start; */
+    width: 100%;
+    border: 1px solid black;
+    margin: 30px auto;
+    padding: 0px;
+}
