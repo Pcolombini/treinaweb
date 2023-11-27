@@ -1,13 +1,37 @@
-p {
-    height: 2000px;
+body {
+    margin: 0;
+    padding:0;
 }
 
-.square {
+ul {
+    margin:0 0 20px 0;
+    display: inline-flex;
+    top: 0;
+    width: 100%;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    border: solid 1px;
-    background-color: blueviolet;
+    padding: 20px 0;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color: brown;
+
+}
+
+li {
+    list-style: none;
+    font-size: 18px;
+    color: white;
+}
+
+p {
+    margin: 10%;
+}
+
+.icone {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+
+.m-bottom {
+    height: 2000px;
 }
