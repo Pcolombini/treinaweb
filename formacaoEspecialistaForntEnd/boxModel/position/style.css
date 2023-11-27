@@ -23,7 +23,7 @@ li {
 }
 
 p {
-    margin: 10%;
+    margin-top: 70px;
 }
 
 .icone {
@@ -32,6 +32,13 @@ p {
     left: 30px;
 }
 
+.stick {
+    background-color:tomato;
+    position:sticky;
+    top: 60px;
+}
+
 .m-bottom {
     height: 2000px;
 }
+
