@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 ;
     padding:0;
 }
 
@@ -23,7 +23,8 @@ li {
 }
 
 p {
-    margin-top: 70px;
+    margin: 70px 15px 0 15px;
+
 }
 
 .icone {
@@ -40,5 +41,31 @@ p {
 
 .m-bottom {
     height: 2000px;
+}
+
+.box {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid;
+    position: relative;
+}
+
+.relative {
+    width: 50px;
+    height:50px;
+    background-color: darkcyan;
+    position: relative;
+    z-index: 1;
+}
+
+.absolute {
+    width:50px;
+    height:50px;
+    background-color: pink;
+    position:absolute;
+    top:0;
+    right:0;
+    z-index: -1;
 }
 
