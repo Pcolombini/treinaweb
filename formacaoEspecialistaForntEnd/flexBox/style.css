@@ -10,7 +10,9 @@ html {
     margin: 3.1rem 1.3rem;
 
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.3rem;
 }
 
 .item {
@@ -20,4 +22,8 @@ html {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 900;
+}
+
+.item:hover {
+    cursor: pointer;
 }
