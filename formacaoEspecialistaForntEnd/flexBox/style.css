@@ -10,8 +10,8 @@ html {
     margin: 3.1rem 1.3rem;
 
     display: flex;
-    justify-content: start;
-    align-items: normal;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .item {
@@ -21,17 +21,4 @@ html {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 900;
-}
-
-.item2 {
-    padding: 2.8rem;
-    background-color: #4e56ff;
-    border: 3px solid green;
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: 900;
-}
-
-.item:hover {
-    cursor: pointer;
 }
