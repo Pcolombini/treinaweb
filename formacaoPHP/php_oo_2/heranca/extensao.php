@@ -15,4 +15,6 @@ $obj->defineCodigoDeBarras("00112");
 $obj->definirVoltagem(220);
 $obj->definirPotencia(620);
 
+$obj->mostrar();
+
 var_dump($obj);

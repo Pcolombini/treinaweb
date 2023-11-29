@@ -14,4 +14,10 @@ class Eletrodomestico extends Produto
             $this->voltagem = $voltagem;
         }
     }
+
+    public function detalhes(): void
+    {
+        echo "Nome: {$this->titulo}<br>";
+        echo "Voltagem: {$this->voltagem}v";
+    }
 }
