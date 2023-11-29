@@ -11,5 +11,6 @@ $obj = new Eletrodomestico;
 $obj->titulo = "Geladeira";
 $obj->preco = 900.00;
 $obj->defineCodigoDeBarras("00112");
+$obj->definirVoltagem(220);
 
 var_dump($obj);
