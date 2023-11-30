@@ -8,9 +8,11 @@ html {
     border: 3px solid;
     background-color: rgba(187, 196, 204, 0.452);
     margin: 3.1rem 1.3rem;
+    height: 200px;
 
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .item {
@@ -20,4 +22,20 @@ html {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 900;
+}
+
+.flex .start {
+    align-self: flex-start;
+}
+
+.flex .end {
+    align-self: flex-end;
+}
+
+.item:first-child {
+    align-self: center;
+}
+
+.item:nth-child(5) {
+    align-self: stretch;
 }
