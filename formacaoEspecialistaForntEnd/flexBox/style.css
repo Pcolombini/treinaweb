@@ -10,8 +10,7 @@ html {
     margin: 3.1rem 1.3rem;
 
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
 }
 
 .item {
