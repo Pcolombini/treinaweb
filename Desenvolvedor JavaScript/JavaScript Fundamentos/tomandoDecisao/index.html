@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de decisão</title>
+    <style>
+        p,
+        pre {
+            width: 600px;
+            margin: 18px auto;
+        }
+
+        p::first-letter {
+            font-weight: bold;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>
+        Condições são <span style="font-weight: bold;">expressões</span> que retornam um valor booleano <span
+            style="color: blue;"><code>true ou false</code></span> (Verdadeiro ou Falso).
+    </p>
+
+    <p>
+        A <strong>execução condicional</strong> é a máquina usando os dados booleanos para decidir se faz ou não algum
+        comando.
+    </p>
+
+    <p>
+        Condicional ternário:
+        <code>
+            3 > 8 ? "É maior" : "É menor";
+        </code>
+        <code>
+            // retorna a <span style="color: red; ">String</span> "É menor".
+        </code>
+    </p>
+
+    <p>
+        Vamos aprender o <span style="color: blue; ">IF</span> e o <span style="color: blue; ">ELSE</span>;
+    </p>
+
+    <pre>
+        Código javaScript;
+            <code>
+                let horas = 6;
+                let mensagem;
+
+                if (horas < 12) {
+                    mensagem = "Bom dia";
+                } else if (horas >= 12 && horas < 18) {
+                    mensagem = "Boa tarde";
+                } else {
+                    mensagem = "Boa noite";
+                }
+
+                console.log(mensagem); // retorna a <span style="color: red; ">String</span> "Bom dia"
+            </code>
+        </pre>
+
+    <p>
+        Vamos aprender o <span style="color: blue; ">SWITCH</span>;
+    </p>
+
+    <pre>
+            Código javaScript;
+                <code>
+                    let mes = 4;
+                    let nomeMes = "";
+            
+                    switch (mes) {
+                        case 1:
+                            nomeMes = "Janeiro";
+                            break;
+                        case 2:
+                            nomeMes = "Fevereiro";
+                            break;
+                        case 3:
+                            nomeMes = "Março";
+                            break;
+                        case 4:
+                            nomeMes = "Abril";
+                            break;
+                        case 5:
+                            nomeMes = "Maio";
+                            break;
+                        case 6:
+                            nomeMes = "Junho";
+                            break;
+                        case 7:
+                            nomeMes = "Julho";
+                            break;
+                        case 8:
+                            nomeMes = "Agosto";
+                            break;
+                        case 9:
+                            nomeMes = "Setembro";
+                            break;
+                        case 10:
+                            nomeMes = "Outubro";
+                            break;
+                        case 11:
+                            nomeMes = "Novembro";
+                            break;
+                        case 12:
+                            nomeMes = "Dezembro";
+                            break;
+                        default:
+                            nomeMes = "Mês inexistente";
+                    }
+            
+                    console.log(nomeMes); // retorna a <span style="color: red; ">String</span> "Abril"
+                </code>
+            </pre>
+
+    <script>
+
+        let horas = 1;
+        let mensagem;
+
+        if (horas < 12) {
+            mensagem = "Bom dia";
+        } else if (horas >= 12 && horas < 18) {
+            mensagem = "Boa tarde";
+        } else {
+            mensagem = "Boa noite";
+        }
+        console.log(mensagem);
+
+        let mes = 4;
+        let nomeMes = "";
+
+        switch (mes) {
+            case 1:
+                nomeMes = "Janeiro";
+                break;
+            case 2:
+                nomeMes = "Fevereiro";
+                break;
+            case 3:
+                nomeMes = "Março";
+                break;
+            case 4:
+                nomeMes = "Abril";
+                break;
+            case 5:
+                nomeMes = "Maio";
+                break;
+            case 6:
+                nomeMes = "Junho";
+                break;
+            case 7:
+                nomeMes = "Julho";
+                break;
+            case 8:
+                nomeMes = "Agosto";
+                break;
+            case 9:
+                nomeMes = "Setembro";
+                break;
+            case 10:
+                nomeMes = "Outubro";
+                break;
+            case 11:
+                nomeMes = "Novembro";
+                break;
+            case 12:
+                nomeMes = "Dezembro";
+                break;
+            default:
+                nomeMes = "Mês inexistente";
+        }
+
+        console.log(nomeMes);
+
+
+    </script>
+</body>
+
+</html>
