@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        section details{
+            margin-left: 3rem;
+        }
+
+        section details ul {
+            color: blue;
+        }
+
+        section details:hover {
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .logicos div {
+            margin-left: 9rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 >Operadores</h1>
+    </header>
+    <main>
+        <section class="logicos" >
+            <h2>Booleanos</h2>
+            <ul>
+                <li>
+                    <p>
+                        Operadores lógicos são usados para definirmos dados do tipo <strong>booleanos</strong>;
+                    </p>
+                </li>
+            </ul>
+
+            <details >
+                <summary>Booleanos</summary>
+                <code style="color: blue;">true</code>
+                <br>
+                <code style="color: blue;">false</code>
+            </details>
+
+            <ul>
+                <li>
+                    <p>
+                        Temos a condição <strong>E</strong> representado por <strong>&&</strong> e temos a condição <strong>OU</strong> representado por <strong>||</strong><small style="color: red;"> Dois pipes</small>;
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Na tabela verdade, temos as representações diferentes, o <strong>E</strong> é representado por <code><strong>^</strong></code>, o <strong>OU</strong> é representado por <code><strong>v</strong></code>;
+                    </p>
+                </li>
+            </ul>
+
+            <div>
+                <img src="https://1.bp.blogspot.com/-kqk1EEQnj2U/YEpCXr8ci9I/AAAAAAAAI3Q/0tpfS8Fk82MHZEdRCY_HZAhmAKbujbCPwCLcBGAsYHQ/w640-h296/Tabela%2BVerdade.PNG" alt="imagem da tabela verdade" width="400px">
+            </div>
+        </section>
+        <section class="aritmeticos">
+            <h2>Aritmeticos</h2>
+            <ul>
+                <li>
+                    <p>
+                        Operadores aritméticos são usados em operações matemáticas
+                    </p>
+                </li>
+            </ul>
+            <details>
+                <summary>
+                    Aritméticos
+                </summary>
+                <ul>
+                    <li>soma (+)</li>
+                    <li>Subtração (-)</li>
+                    <li>Multiplicação (*)</li>
+                    <li>Divisão (/)</li>
+                    <li>Modulo (%)</li>
+                    <li>Exponenciação (**)</li>
+                    <li>Incremento (++)</li>
+                    <li>Decremento (--)</li>
+                </ul>
+            </details>
+        </section>
+        <section class="igualdade"></section>
+    </main>
+    <section class="script">
+        <script src="./logicos.js"></script>
+        <script src="./aritmetico.js"></script>
+        <script src="./igualdade.js"></script>
+        <script src="./relacionais.js"></script>
+        <script src="./concatenacao.js"></script>
+        <script src="./unarios.js"></script>
+        <script src="./ternarios.js"></script>
+    </section>
+</body>
+
+</html>
