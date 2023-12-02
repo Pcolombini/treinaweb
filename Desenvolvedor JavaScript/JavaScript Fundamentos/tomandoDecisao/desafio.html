@@ -1,0 +1,102 @@
+<script>
+
+    function par(numero) {
+        if (numero % 2 == 0) {
+            console.log("Par");
+        } else {
+            console.log("Ímpar");
+        }
+    }
+
+    par(81);
+
+    function vogal(letra) {
+        if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+            console.log("Vogal");
+        } else {
+            console.log("Consoante");
+        }
+    }
+
+    vogal('h');
+
+    function semana(numero) {
+        switch (numero) {
+
+            case 1: console.log("Domingo");
+            break;
+            case 2: console.log("Segunda");
+            break;
+            case 3: console.log("Terça");
+            break;
+            case 4: console.log("Quarta");
+            break;
+            case 5: console.log("Quinta");
+            break;
+            case 6: console.log("Sexta");
+            break;
+            case 7: console.log("Sábado");
+            break;
+            default:console.log("Dia Inválido");
+
+        }
+    }
+
+    semana(2);
+
+    function triangulo(a,b,c) {
+
+        if (((a + b) > c)) {
+            if (a === b && a === c && c === b) {
+                console.log("Equilátero");
+            } else if (a !== b && a !== c && c !== b) {
+                console.log("Escaleno");
+            } else if (a === b || a === c || c === b) {
+                console.log("Isósceles");
+            }
+        } else {
+            console.log("Não é um triângulo");
+        }
+    }
+
+    triangulo(2,2,5);
+
+    function media(a,b,c,d) {
+
+        let conceito;
+        let soma = a + b + c + d;
+        let media = soma / 4;
+
+        if (media >= 9) {
+            conceito = "A";
+        } else if (media >= 7.5) {
+            conceito = "B";
+        } else if (media >= 6) {
+            conceito = "C";
+        } else if (media >= 4) {
+            conceito = "D";
+        } else {
+            conceito = "F";
+        }
+
+        console.log(media);
+        console.log(conceito);
+    }
+
+    media(5,5,7,7);
+
+    function preco(quantidade) {
+        
+        let preco = 5.5;        
+
+        if (quantidade >= 25) {
+            preco = 4.85;
+            console.log(quantidade * preco);
+        } else {
+            console.log(quantidade * preco);
+        }
+    }
+
+    preco(35)
+
+</script>
