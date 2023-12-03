@@ -56,7 +56,7 @@ if (total >= totalAProcurar) {
 let numeroEsclhido = Math.floor(Math.random() * 9 + 1),
     acertou = false,
     palpite = '3' ;
-
+/* 
 do {
 
     palpite;
@@ -71,4 +71,20 @@ if (acertou) {
     console.log('Vitória');
 } else {
     console.log('Não foi dessa vez');
+} */
+
+for(let i = 1; i <= 10; i++) {
+    if (i === 5) {
+    continue;
+    }
+    console.log(i);
+}
+
+for(let i = 1; i <= 10; i++) {
+
+    if (i === 5) {
+    break;
+    }
+    
+    console.log(i);
 }

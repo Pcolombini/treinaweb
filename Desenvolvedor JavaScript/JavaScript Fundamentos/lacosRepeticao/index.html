@@ -13,57 +13,91 @@
 
     </header>
     <main id="main">
-        <p>
-            Umas das tarefas que o computador faz é repetir comandos seguidos até satisfazer uma condição.
-        </p>
+        <section>
+            <p>
+                Umas das tarefas que o computador faz é repetir comandos seguidos até satisfazer uma condição.
+            </p>
+            <p>
+                Por exemplo, imagina você precisar imprimir na tela uma contagem de 1 até 100, não seria viável digitar 100
+                vezes o camando, imagina ter que digitar até 1000 ou 1000000 de vezes.
+            </p>
+            <p>
+                Por isso temos os laços de repetição:
+            </p>
+            <ul class="list">
+                <li>While</li>
+                <li>Do While</li>
+                <li>For</li>
+            </ul>
+        </section>
 
-        <p>
-            Por exemplo, imagina você precisar imprimir na tela uma contagem de 1 até 100, não seria viável digitar 100
-            vezes o camando, imagina ter que digitar até 1000 ou 1000000 de vezes.
-        </p>
-
-        <p>
-            Por isso temos os laços de repetição:
-        </p>
-        <ul class="list">
-            <li>While</li>
-            <li>Do While</li>
-            <li>For</li>
-            <li>Foreach</li>
-        </ul>
-
-        <P>
-            Sintaxe do laço <strong>for</strong>
-        </P>
-        <pre>
-            <span class="azul">Código javaScript</span>
-            <code>        
-                <span class="verde">//  INICIALIZAÇÃO ; EXPRESSÃO ; INCREMENTO</span>
-                <span class="violeta">for</span> (let i = 0    ;  i <= 10  ;  i++) {
-                console.log(i);
-                }
-                
-                <span>// SAÍDA : 0,1,2,3,4,5,6,7,8,9,10</span>
-                
-            </code>
-        </pre>
-
-        <P>
-            Sintaxe do laço <strong>while</strong>
-        </P>
-        <pre>
-            <span class="azul">Código javaScript</span>
-            <code>        
-                let i = 0;
-
-                <span class="violeta">while</span> (i <= 10) {
+        <section class="for">
+            <P>
+                Sintaxe do laço <strong>for</strong>
+            </P>
+            <pre>
+                <span class="azul">Código javaScript</span>
+                <code>
+                    <span class="verde">//  INICIALIZAÇÃO ; EXPRESSÃO ; INCREMENTO</span>
+                    <span class="violeta">for</span> (let i = 0    ;  i <= 10  ;  i++) {
                     console.log(i);
-                    i++;
-                }
+                    }
+            
+                    <span>// SAÍDA : 0,1,2,3,4,5,6,7,8,9,10</span>
+            
+                </code>
+            </pre>
+        </section>
 
-                <span class="verde">// SAÍDA : 0,1,2,3,4,5,6,7,8,9,10</span>
-            </code>
-        </pre>
+        <section class="
+        while">
+            <P>
+                Sintaxe do laço <strong>while</strong>
+            </P>
+            <pre>
+                <span class="azul">Código javaScript</span>
+                <code>
+                    let i = 0;
+                    <span class="violeta">while</span> (i <= 10) {
+                        console.log(i);
+                        i++;
+                    }
+                    <span class="verde">// SAÍDA : 0,1,2,3,4,5,6,7,8,9,10</span>
+                </code>
+            </pre>
+        </section>
+
+        <section class="doWhile">
+            <P>
+                Sintaxe do laço <strong>do while</strong>
+            </P>
+            <pre>
+                <span class="azul">Código javaScript</span>
+                <code>
+
+                    let <span class="ciano">numeroEsclhido</span> = Math.floor(Math.random() * 9 + 1),
+                         <span class="ciano">acertou</span> = false,
+                         <span class="ciano">palpite</span> = '3' ;
+
+                    <span class="violeta">do</span> {
+
+                        palpite;
+                    
+                        if (parseInt(<span class="ciano">palpite</span>) === <span class="ciano">numeroEsclhido</span>) {
+                            <span class="ciano">acertou</span> = true;
+                        }
+                    
+                    } <span class="violeta">while</span> (<span class="ciano">palpite</span> !== '' && parseInt(<span class="ciano">palpite</span>) !== <span class="ciano">numeroEsclhido</span>);
+                    
+                    if (<span class="ciano">acertou</span>) {
+                        console.log('Vitória');
+                    } else {
+                        console.log('Não foi dessa vez');
+                    }
+                </code>
+            </pre>
+        </section>
+
     </main>
     <footer id="footer">
 
