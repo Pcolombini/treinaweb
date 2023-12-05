@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Funções</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Funções
+        </h1>
+    </header>
+    <main>
+        <section class="container">
+            <section class="content">
+                <section class="apresentacao">
+                    <h2>Apresetação</h2>
+                    <p>
+                        As linguagens de programação possuem estruturas que nos permitem reutilizar códigos, essas
+                        estruturas são as funções.
+                    </p>
+                    <p>
+                        Isso torna nosso código mais organizado e noso trabalho mais simples.
+                    </p>
+                </section>
+                <section class="conteudo">
+                    <h2>O que são as Funções?</h2>
+                    <p>
+                        Imagine que você queira imprimir a tabuada de algum número, como fizemos anteriormente.
+                    </p>
+                    <p>
+                        Porém, agora você terá que fazer em vários lugares do seu programa, com diferentes números.
+                        Imagine o trabalho de ter que copiar e colar o mesmo código em vários lugares! E se fosse uma
+                        conta mais complexa e você tivesse que alterar algo na lógica? Daria muito mais trabalho arrumar
+                        em vários lugares.
+                    </p>
+                    <p>
+                        Essa é uma das razões de termos o que chamamos de Funções. <strong>Funções são basicamente um
+                            conjunto de linhas de código que podemos chamar a qualquer hora e em qualquer
+                            lugar.</strong>
+                    </p>
+                    <p>
+                        Então, podemos criar uma função que faça essa tabuada para nós e chamá-la onde precisarmos.
+                    </p>
+                    <p>
+                        Um ótimo jeito de <strong>deixar o</strong> seu <strong>código mais limpo e fácil de manter é
+                            sempre criar funções que tenham apenas uma responsabilidade</strong>, ou seja, <strong>não
+                            devem fazer mais de uma coisa.</strong> Também tente fazer com que a função não tenha mais
+                        de 20 linhas. Se tiver mais de 20 linhas, provavelmente ela está fazendo mais de uma coisa.
+                    </p>
+                    <p>
+                        Caso em algum momento você pense em copiar um código e colar em outro lugar, provavelmente você
+                        estará precisando de reutilização de código, indicando que provavelmente você está precisando
+                        criar uma função para evitar código repetido.
+                    </p>
+                    <p>
+                        Para declararmos nossas funções, usamos a palavra chave: <span
+                            style="color: blue;">function</span> seguida do nome da função e parênteses, que pode ter
+                        argumento ou não.<br>
+                        <br>
+                        Ex.:
+                    </p>
+                    <pre>
+                        <code>
+                            <span style="color: blue;">function</span> <span style="color: darkgoldenrod;">somar</span>(<span style="color: darkorchid;">let</span> a, b) {
+                                <span style="color: darkorchid;">return</span> a + b;
+                            }
+
+                            <span style="color: blue;">console</span>.<span style="color: darkorchid;">log</span>(<span style="color: darkgoldenrod;">somar</span>(2,2));
+
+                            <span style="color: darkolivegreen;">//SAÍDA:  4</span>
+                        </code>
+                    </pre>
+                    <p>
+                        E para chamar a função, apenas declaramos o nome da função seguida com os parênteses '()' como
+                        fiz acima em <strong>console.log</strong>.
+                    </p>
+
+                    <section class="conteudo">
+                        <h2>Variáveis locais e globais</h2>
+                        <p>
+                            <strong>Variável Local</strong>
+                        </p>
+                        <p>
+                            Ela só existe onde foi declarada;<br>
+                            Pode ser usada em seu escopo local, como funções e laços;
+                        </p>
+                        <p>
+                            <strong>Variável Global</strong>
+                        </p>
+                        <p>
+                            Ela só existe em qualquer parte do código;
+                            pode ser declarada com <span style="color: blue;">window</span>.<span
+                                style="color: darkgoldenrod;">variavel</span>; <br>ou no <strong>NodeJs</strong> com
+                            <span style="color: blue;">global</span>.<span
+                                style="color: darkgoldenrod;">variavel</span>;
+                        </p>
+                    </section>
+                </section>
+                <section class="conteudo">
+                    <h2>Funções Anônimas e Callbacks</h2>
+                    <p>
+                        No <strong>javaScript</strong> funções podem ser armazendas em variáveis. Esse comportamento nos desobriga a nomear uma função;
+                    </p>
+                    <p>
+                        Esse tipo de função é chamada de <strong>Anônima</strong>
+                    </p>
+                    <pre>
+                        <code>
+                            <span style="color: blue;">let</span> minhaFuncao = <span style="color: blue;">function</span>(<span style="color: darkorchid;">let</span> a, b) {
+                                <span style="color: darkorchid;">return</span> a + b;
+                            }
+
+                            <span style="color: blue;">console</span>.<span style="color: darkorchid;">log</span>(<span style="color: darkgoldenrod;">minhaFuncao</span>(2,2));
+
+                            <span style="color: darkolivegreen;">//SAÍDA:  4</span>
+                        </code>
+                    </pre>
+                    <p>
+                        <strong>CallBack</strong>
+                    </p>
+                    <p>
+                        É uma função que será executada posteriormente. Muito utilizado em assincrono;
+
+                        <pre>
+                            <code>
+                                <span style="color: blue;">console</span>.<span style="color: darkorchid;">log</span>('começou');
+
+                                <span style="color: darkolivegreen;">// EXECUTA NO CONSOLE A STRING 'COMEÇOU'</span>
+
+                                <span style="color: darkgoldenrod;">setTimeout</span>(<span style="color: darkgoldenrod;">somar</span>, 2000); <span style="color: darkolivegreen;">// VAI CHAMAR A FUNÇÃO SOMAR, APOS 2S</span>
+
+                                <span style="color: darkolivegreen;">// USANDO FUNÇÃO ANÔNIMA</span>
+
+                                <span style="color: darkgoldenrod;">setTimeout</span>(<span style="color: blue;">function</span>(){
+                                    <span style="color: blue;">console</span>.<span style="color: darkorchid;">log</span>('passaram 2 segundos');
+                                },2000)
+                            </code>
+                        </pre>
+                    </p>
+                </section>
+                <section class="conteudo">
+                    <h2>Arrow Functions</h2>
+                    <p>
+                        São funções criadas no formato "() => {}". Caso tenha apenas um parâmetro, não é necessário usar parênteses. Caso tenha apenas uma linha, não é necessário usar chaves e nem "return".
+                    </p>
+                </section>
+            </section>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
