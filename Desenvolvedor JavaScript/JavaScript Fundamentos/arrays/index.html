@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon/javascript-32.png" type="image/x-icon">
+    <style>
+        html {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0px auto;
+            padding: 0 3rem 3rem 3rem;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container h1 {
+            text-align: center;
+            padding: 0;
+        }
+
+        .container .content h2 {
+            letter-spacing: 1px;
+        }
+
+        .container .content p {
+            margin-left: 0.8rem;
+        }
+
+        .content .table{
+            
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 0.5rem;
+        }
+
+    </style>
+    <title>Arrays</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Arrays
+        </h1>
+        <div class="content">
+            <h2>Arrays</h2>
+            <p>
+                Estrutura que nos permite criar lista de valores.
+            </p>
+            <h2>Criação de Arrays</h2>
+            <p>
+                Utilize "[]" couchetes. Os elementos dentro do Array devem ser separados por vírgulas.
+            </p>
+            <h2>Trabalhando com Arrays</h2>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>push</th>
+                        <td>Adiciona um novo elemento ao final do Array.</td>
+                    </tr>
+                    <tr>
+                        <th>unshift</th>
+                        <td>Adiciona um novo elemento no primeiro índice do Array.</td>
+                    </tr>
+                    <tr>
+                        <th>pop</th>
+                        <td>Remove o último item do Array.</td>
+                    </tr>
+                    <tr>
+                        <th>shift</th>
+                        <td>Remove o primeiro item do Array.</td>
+                    </tr>
+                    <tr>
+                        <th>splice</th>
+                        <td>Pode remover ou adicionar um item no Array. Indique a posição do início da operação, quantos itens quer remover e os itens que quer adicionar.</td>
+                    </tr>
+                    <tr>
+                        <th>length</th>
+                        <td>Retorna o tamanho do Array, (também pode ser adicionado em strings)</td>
+                    </tr>
+                    <tr>
+                        <th>[Índice]</th>
+                        <td>Permite acessar um elemento do Array de acordo com sua posição (também pode ser usado em String)</td>
+                    </tr>
+                </table>
+            </div>
+            <h2>Declarando várias variáveis com Arrays</h2>
+            <p>Você pode declarar variáveis que recebem valores dos elementos do Array.</p>
+            <pre>
+                    <code>
+                        let [primeiroElemento, segundoElemento] = [1,2,3]
+                    </code>
+            </pre>
+            <h2>Operador Spread (...)</h2>
+            <p>
+                Serve para espalhar os elementos de um Array.
+            </p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="exercicio.js"></script>
+</body>
+</html>
