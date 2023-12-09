@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 770px;
+    margin: 0px auto;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 1rem;
+
+    padding: 0.5rem;
+}
+
+.content .conteudo h2, .content .conteudo p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.conteudo p {
+    margin-left: 1rem;
+}
