@@ -111,6 +111,110 @@
                     </code>
                 </pre>
             </div>
+            <div class="conteudo">
+                <h2>Conhecendo o JSON e sua importância</h2>
+                <p>
+                    <strong>JSON</strong> significa "<strong>JavaScript Object Notation</strong>", que traduzido é
+                    "<strong>Notação de objeto JavaScript</strong>".
+                </p>
+                <p>
+                    JSON é um padrão para escrever objetos com a sintaxe do JS. É suportado por diversas linguagens de
+                    programação, possue o objetivo de transferir dados de uma linaguagem para a outra.
+                </p>
+                <p>
+                    Como JSON trata de um objeto que vai ser transferido por mensagem, alguns coisas não são
+                    compatíveis, as funções e objetos complexos como o Date(), não são passados. Podem ser passados por
+                    JSON os tipos primitivos, alguns objetos e arrays.
+                </p>
+                <p>
+                    Para escrever JSON também usamos chaves {}, mas as propriedades precisam estar envolvidas em aspas
+                    duplas "".
+                </p>
+                <p>
+                    Para transferir um objeto JavaScript para JSON e assim transferir para outros programas precisamos
+                    transformálo em uma string, com a função tringfy do objeto
+                    JSON:<br><strong>JSON.stringfy(objeto)</strong>;.
+                </p>
+                <p>
+                    E quando recebemos strings e precisamos transforma em objetos novamente usamos uma função dentro do
+                    objeto JSON que é o
+                    parse:<br><strong>JSON.parse("{"cor":"Preto","tamanho":15,"corDaBorracha":"Rosa"}");</strong>
+                </p>
+            </div>
+            <div class="conteudo">
+                <h2>Onde o JSON pode ser usado?</h2>
+                <p>
+                    Vimos um pouco sobre a importância do JSON. Agora vamos entender onde ele costuma ser mais usado.
+                </p>
+                <h3>Transferência de Dados</h3>
+                <p>
+                    O JSON é o formato mais utilizado hoje em dia quando precisamos que um software se comunique com
+                    outro.
+                </p>
+                <p>
+                    Quando você envia uma mensagem para um amigo, o aplicativo envia esse dado como JSON para o servidor
+                    da empresa responsável pelo aplicativo, processa e envia o JSON para o Smartphone do seu amigo.
+                </p>
+                <p>
+                    Quando acessa o YouTube, vários dados sobre os vídeos chegam ao seu navegador ou aplicativo por
+                    JSON.
+                </p>
+                <div>
+                    <img src="../objetos/img/json.png" alt="representa um arquivo JSON" width="100%">
+                </div>
+                <p>
+                    E não é apenas entre softwares da mesma empresa! Empresas também podem fornecer serviços que
+                    fornecem dados úteis para que terceiros possam criar outros softwares!
+                </p>
+                <p>
+                    Um bom exemplo é o ViaCep, que nos retorna um JSON com as informações de um endereço a partir de um
+                    CEP informado. Sabe quando você digita o CEP em um formulário e ele já preenche os outros campos?
+                    Eles vieram de um serviço como o ViaCep através de JSON.
+                </p>
+
+                <p>
+                    No link abaixo, substitua "01001000" pelo seu CEP e você verá um JSON com as informações como rua,
+                    bairro, cidade, etc.<br>
+                    <a href="https://viacep.com.br/ws/01001000/json/"
+                        target="_blank">https://viacep.com.br/ws/01001000/json/</a>
+                </p>
+                <h3>Configurações</h3>
+                <p>
+                    O JSON também pode ser usado como um arquivo onde armazenamos informações que serão lidas por um
+                    programa para ele saber como se comportar, ou seja, suas configurações.
+                </p>
+
+                <p>
+                    O próprio VS Code possui várias configurações que você pode customizar editando um arquivo JSON de
+                    configuração que ele possui.
+                </p>
+
+                <p>
+                    Projetos de Front-End modernos e de Node.js costumam ter um arquivo chamado package.json, onde
+                    armazenamos informações sobre o nome do projeto, sua versão e várias outras informações importantes
+                    para o projeto.
+                </p>
+
+                <p>
+                    Para saber mais, você pode conferir nosso curso de NPM.
+                    
+                </p>
+                <h3>Armazenamento de Dados</h3>
+                <p>
+                    O JSON também pode ser usado para armazenar dados. Assim como podemos ter o JSON em uma variável,
+                    também podemos ter ele salvo em um arquivo. Para pegar o JSON, basta ler o arquivo.
+                </p>
+
+                <p>
+                    É exatamente assim que o Tw Dev Server simula um banco de dados.
+                    
+                </p>
+
+                <p>
+                    Também existe um banco de dados chamado MongoDB. Ele utiliza uma estrutura baseada no JSON para
+                    armazenar seus dados.
+                </p>
+            </div>
         </div>
     </main>
     <script src="../objetos/main.js"></script>

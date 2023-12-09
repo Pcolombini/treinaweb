@@ -42,7 +42,12 @@ delete lapis.Ponta;
 
 console.log(Object.keys(lapis));
 
-// 
+// Transformando objeto lápis em um JSON
 
-console.log(lapis)
-console.log(lapis['corDaBorracha']);
+console.log(JSON.stringify(lapis));
+
+/* As funções não são passadas para o JSON, objetos como Data também não*/
+
+// Convertendo a string em um JSON
+
+console.log(JSON.parse('{"cor":"Preto","tamanho":15,"corDaBorracha":"Rosa"}'));
