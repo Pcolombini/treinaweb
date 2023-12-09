@@ -25,9 +25,9 @@ const lapis = {
 lapis.cor;
 lapis['cor'];
 
-let cor = 'cor';
+let corDoLapis = 'cor';
 
-lapis[cor];
+lapis[corDoLapis];
 
 // Criando novos atributos
 
@@ -51,3 +51,76 @@ console.log(JSON.stringify(lapis));
 // Convertendo a string em um JSON
 
 console.log(JSON.parse('{"cor":"Preto","tamanho":15,"corDaBorracha":"Rosa"}'));
+
+// O que é referência
+
+let num1 = 15;
+let num2 = num1;
+
+console.log(num1 === num2); // true
+
+num1 = 18;
+
+console.log(num1 === num2); // false
+
+// agora com objetos
+
+let obj1 = {nome:"paschoal"};
+let obj2 = obj1;
+
+console.log(obj1 === obj2); // true
+
+obj1.nome = 'maria';
+
+console.log(obj1 === obj2); // true
+
+/* Isso acontece pois objetos que recebem outros objetos recebem na verdade a referência do primeiro objeto, ou seja, ele copia o endereço da memória, eles apontam para o mesmo lugar na memória do computador, mesmo que criemos dois objetos com o mesmo conteúdo, se os compararmos, eles retornaram false, por que por mais que o conteúdo seja o mesmo, o que é comparado em relação aos objetos é o lugar da meória */
+
+let obj3 = {idade:12};
+let obj4 = {idade:12};
+
+console.log(obj3 === obj4); // false
+
+// Clonando um objeto
+
+obj2 = JSON.parse(JSON.stringify(obj1));
+obj2.nome = 'Paschoal';
+
+console.log(obj1);
+console.log(obj2);
+
+// Extraindo propriedades dos objetos
+
+let corL = lapis.cor,
+    tamanhoL = lapis.tamanho;
+
+let {cor, tamanho} = lapis
+
+console.log(corL, cor, tamanhoL, tamanho);
+
+// Recebendo no argumento da função a propriedade especifica do obj
+
+minhaFunc = ({corDaBorracha, tamanho}) => {console.log(corDaBorracha,tamanho);}
+
+minhaFunc(lapis);
+
+// Operador spread ... 
+
+outraFunc = () => {
+    return {
+        cor: "Preto",
+        tamanhoDois: 15,
+        usado: false
+    }
+}
+
+let {tamanhoDois, ...outras} = outraFunc(); // spread vai pegar as propriedades e colocar nessa variável outras
+
+console.log(tamanhoDois);
+
+
+// Clone com spread
+
+const lapis2 = {...lapis}
+
+console.log(lapis === lapis2);
