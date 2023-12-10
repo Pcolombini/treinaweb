@@ -124,3 +124,23 @@ console.log(tamanhoDois);
 const lapis2 = {...lapis}
 
 console.log(lapis === lapis2);
+
+// Symbols - tipo primitivo do JS
+
+let meuSymbol = Symbol('cpf');
+let outroSybol = Symbol('cpf');
+
+console.log(meuSymbol === outroSybol);
+
+/* Podemos usar os Sybols para definir propriedades seguras, pois eles são acessíveis somente com o nome da variável, e não aparecem num object.keys() */
+
+let usado = Symbol('usado');
+
+const lapiseira = {
+    cor: "Azul",
+    ponta: 0.5,
+    [usado]: false
+}
+
+console.log(Object.keys(lapiseira)); // usado que é um tipo Symbol não aparece
+
