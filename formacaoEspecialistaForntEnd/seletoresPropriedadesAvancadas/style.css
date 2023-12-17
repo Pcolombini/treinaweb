@@ -16,8 +16,9 @@ body {
 
     /* SHORT HAND */
 
-    background: darkslategray url('img/gato.jpg') no-repeat fixed center center / 400px;
+    /* background: darkslategray url('img/gato.jpg') no-repeat fixed center center / 400px; */
 
+    background-image: radial-gradient(circle,#087c7c ,#1328a0 , #2ae6ec );
 }
 
 main {
