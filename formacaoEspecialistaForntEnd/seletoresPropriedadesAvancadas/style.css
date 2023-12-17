@@ -6,6 +6,11 @@
 body {
     /* background:darkslategray; */
     background-image: url("img/gato.jpg");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100vw;
+    height: 100vh;
 }
 
 main {
