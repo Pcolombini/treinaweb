@@ -1,9 +1,11 @@
 * {
     font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 body {
-    background:darkslategray;
+    /* background:darkslategray; */
+    background-image: url("img/gato.jpg");
 }
 
 main {
@@ -23,4 +25,10 @@ main {
     width: 10rem;
     height: 10rem;
     border: 1px solid hsla(120, 100%, 50%, 100%);
+}
+
+.caixa {
+    background-color: #030303;
+    width: 10rem;
+    height: 10rem;
 }
