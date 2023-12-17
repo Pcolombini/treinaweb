@@ -56,10 +56,20 @@ main {
 }
 
 p {
-    border: solid black 1px;
+    /* border: solid black 1px; */
     /* text-transform: lowercase; */
-    width: 120px;
-    word-break: normal;
+    /* width: 120px; */
+    /* word-break: normal; */
+    margin: 0;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    border: solid black 1px;
+    background-color: aquamarine;
+    overflow-y: visible;
+    overflow-x: visible;
 }
 
 h1 {
