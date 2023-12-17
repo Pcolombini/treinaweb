@@ -145,6 +145,18 @@ h1 {
     background-color: chocolate;
 } */
 
-ul li:nth-child(2n) {
+/* ul li:nth-child(2n) {
+    background-color: chocolate;
+} */
+
+/* ul li:nth-child(3) {
+    background-color: chocolate;
+} */
+
+/* ul li:nth-child(n + 5) {
+    background-color: chocolate;
+} */
+
+ul li:nth-child(-n + 5) {
     background-color: chocolate;
 }
