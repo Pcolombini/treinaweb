@@ -196,3 +196,20 @@ a:active {
 input:focus {
     background-color: violet;
 }
+
+h2::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: red;
+}
+
+h2::after {
+    content: "";
+    width: 200px;
+    height: 120px;
+    display: block;
+    background-image:url('img/gato.jpg');
+    background-size: 100%;
+}
