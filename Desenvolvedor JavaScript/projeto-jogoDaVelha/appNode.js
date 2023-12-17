@@ -1,3 +1,5 @@
+const stdin = process.openStdin();
+
 let velha = {
 
 			iniciarJogo() {
@@ -10,24 +12,21 @@ let velha = {
 				}
 			},
 
-
 			imprimir() {
 				console.log(`
 					${velha.campo[6]} | ${velha.campo[7]} | ${velha.campo[8]}
-				   ___________
+				    _______________
 
 					${velha.campo[3]} | ${velha.campo[4]} | ${velha.campo[5]}
-				   ___________
+				    ________________
 
 					${velha.campo[0]} | ${velha.campo[1]} | ${velha.campo[2]}
 				`)
 			},
 
-
 			trocarJogador() {
 				velha.jogadorAtual = velha.jogadorAtual === "X" ? "O" : "X"
 			},
-
 
 			fazerJogada(posicao) {
 				if (posicao > 0 && posicao < 10 && typeof velha.campo[posicao - 1] === "number") {
@@ -64,6 +63,32 @@ let velha = {
 				}
 				return false;
 			}
-
-
 		}
+
+velha.iniciarJogo();
+console.clear();
+velha.imprimir();
+console.log(`Jogador Atual: ${velha.jogadorAtual}`)
+
+stdin.addListener('data', line => {
+
+	const posicao = Number.parseInt(line.toString());
+
+	if (velha.jogoFinalizado || !posicao) {
+		stdin.pause();
+	} else {
+		if (velha.fazerJogada(posicao)) {
+		velha.trocarJogador();
+		}
+
+		velha.jogoFinalizado = velha.verificarFimDaVelha();
+
+		if (!velha.jogoFinalizado) {
+			console.clear();
+			velha.imprimir();
+			console.log(`Jogador Atual: ${velha.jogadorAtual}`)
+		} else {
+			process.exit();
+		}
+	}	
+});
