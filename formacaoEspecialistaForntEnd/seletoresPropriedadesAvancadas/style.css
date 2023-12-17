@@ -4,15 +4,20 @@
 }
 
 body {
-    /* background:darkslategray; */
     width: 100vw;
     height: 100vh;
-
+    
+    /* background:darkslategray;
     background-image: url("img/gato.jpg");
-    background-size: 400px;
     background-repeat: no-repeat;
-    background-position: left center;
     background-attachment: fixed;
+    background-position: left center;
+    background-size: 400px; */
+
+    /* SHORT HAND */
+
+    background: darkslategray url('img/gato.jpg') no-repeat fixed center center / 400px;
+
 }
 
 main {
