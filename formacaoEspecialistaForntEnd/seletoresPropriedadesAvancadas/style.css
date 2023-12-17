@@ -127,6 +127,24 @@ h1 {
     background-color: blueviolet;
 } */
 
-ul li {
+/* ul li {
     background-color: blueviolet;
+} */
+
+/* Trabalhando com Child */
+
+/* ul li:nth-child(odd) {
+    background-color: chocolate;
+} */
+
+/* ul li:nth-child(even) {
+    background-color: chocolate;
+} */
+
+/* ul li:nth-child(2n+1) {
+    background-color: chocolate;
+} */
+
+ul li:nth-child(2n) {
+    background-color: chocolate;
 }
