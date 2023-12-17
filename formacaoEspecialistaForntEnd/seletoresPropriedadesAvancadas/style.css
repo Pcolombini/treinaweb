@@ -1,11 +1,17 @@
 * {
-    font-size: 62.5%;
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
-    width: 100vw;
-    height: 100vh;
+    font-size: 1.6rem;
+
+
+    /* width: 100vw;
+    height: 100vh; */
     
     /* background:darkslategray;
     background-image: url("img/gato.jpg");
@@ -18,13 +24,13 @@ body {
 
     /* background: darkslategray url('img/gato.jpg') no-repeat fixed center center / 400px; */
 
-    background-image: radial-gradient(circle,#087c7c ,#1328a0 , #2ae6ec );
+    /* background-image: radial-gradient(circle,#087c7c ,#1328a0 , #2ae6ec ); */
 }
 
 main {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1rem; */
 }
 
 .um {
@@ -45,4 +51,24 @@ main {
     background-color: #030303;
     width: 10rem;
     height: 10rem;
+}
+
+p {
+    border: solid black 1px;
+}
+
+.a {
+    white-space: nowrap;
+}
+
+.b {
+    white-space: pre;
+}
+
+.c {
+    white-space: pre-wrap;
+}
+
+.d {
+    white-space: normal;
 }
