@@ -157,6 +157,14 @@ h1 {
     background-color: chocolate;
 } */
 
-ul li:nth-child(-n + 5) {
+/* ul li:nth-child(-n + 5) {
     background-color: chocolate;
+} */
+
+/* ul li:first-child {
+    background-color: darkgoldenrod;
 }
+
+ul li:last-child {
+    background-color: goldenrod;
+} */
