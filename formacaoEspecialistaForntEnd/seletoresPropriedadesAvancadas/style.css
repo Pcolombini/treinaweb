@@ -57,28 +57,32 @@ main {
 
 p {
     /* border: solid black 1px; */
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
+}
+
+h1 {
+    text-shadow: 0px -4px 1px rgb(231, 228, 24);
 }
 
 .a {
     /* white-space: nowrap; */
     /* text-decoration: overline; */
     /* text-transform: uppercase; */
-    text-indent: 2rem;
+    /* text-indent: 2rem; */
 }
 
 .b {
     /* white-space: pre; */
     /* text-decoration: line-through; */
     /* text-transform: lowercase; */
-    text-indent: -3rem;
+    /* text-indent: -3rem; */
 }
 
 .c {
     /* white-space: pre-wrap; */
     /* text-decoration: underline; */
     /* text-transform: capitalize; */
-    text-indent: 3em;
+    /* text-indent: 3em; */
 }
 
 .d {
