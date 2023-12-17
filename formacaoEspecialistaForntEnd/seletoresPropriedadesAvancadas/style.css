@@ -57,24 +57,28 @@ main {
 
 p {
     /* border: solid black 1px; */
+    text-transform: lowercase;
 }
 
 .a {
     /* white-space: nowrap; */
     /* text-decoration: overline; */
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    text-indent: 2rem;
 }
 
 .b {
     /* white-space: pre; */
     /* text-decoration: line-through; */
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
+    text-indent: -3rem;
 }
 
 .c {
     /* white-space: pre-wrap; */
     /* text-decoration: underline; */
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
+    text-indent: 3em;
 }
 
 .d {
