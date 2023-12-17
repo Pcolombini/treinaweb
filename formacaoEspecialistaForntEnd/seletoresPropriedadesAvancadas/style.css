@@ -12,7 +12,7 @@ body {
 
     /* width: 100vw;
     height: 100vh; */
-    
+
     /* background:darkslategray;
     background-image: url("img/gato.jpg");
     background-repeat: no-repeat;
@@ -61,20 +61,24 @@ p {
 
 .a {
     /* white-space: nowrap; */
-    text-decoration: overline;
+    /* text-decoration: overline; */
+    text-transform: uppercase;
 }
 
 .b {
     /* white-space: pre; */
-    text-decoration: line-through;
+    /* text-decoration: line-through; */
+    text-transform: lowercase;
 }
 
 .c {
     /* white-space: pre-wrap; */
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    text-transform: capitalize;
 }
 
 .d {
     /* white-space: normal; */
-    text-decoration: overline underline line-through;
+    /* text-decoration: overline underline line-through; */
+    /* text-transform: ; */
 }
