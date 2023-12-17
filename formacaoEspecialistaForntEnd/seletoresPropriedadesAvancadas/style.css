@@ -107,16 +107,26 @@ h1 {
     /* text-transform: ; */
 }
 
-.item {
+/* .item {
     background-color: aquamarine;
-} 
+}  */
 
 /* Seletor ~ geral de irmãos */
-.item ~ li {
+/* .item ~ li {
     background-color: brown;
-}
+} */
 
 /* Seletor + irmãos adjacentes */
 /* .item + li, .item {
     background-color: aqua;
 } */
+
+/* Seletores > e spaço filhos */
+
+/* ul > li {
+    background-color: blueviolet;
+} */
+
+ul li {
+    background-color: blueviolet;
+}
