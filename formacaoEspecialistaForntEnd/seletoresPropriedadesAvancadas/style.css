@@ -68,8 +68,8 @@ div {
     height: 150px;
     border: solid black 1px;
     background-color: aquamarine;
-    overflow-y: visible;
-    overflow-x: visible;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
 
 h1 {
