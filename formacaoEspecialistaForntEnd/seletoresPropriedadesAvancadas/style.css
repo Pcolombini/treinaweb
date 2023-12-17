@@ -5,16 +5,19 @@
 
 body {
     /* background:darkslategray; */
+    width: 100vw;
+    height: 100vh;
+
     background-image: url("img/gato.jpg");
     background-size: 400px;
     background-repeat: no-repeat;
-    background-position: center top;
-    width: 100vw;
-    height: 100vh;
+    background-position: left center;
+    background-attachment: fixed;
 }
 
 main {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
 }
 
