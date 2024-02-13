@@ -2,3 +2,31 @@
     max-width: 1280px;
     margin: 0px auto;
 }
+
+@media(max-width: 1200px) {
+    .container {
+        /* background-color: #c1c121; */
+        max-width: 900px;
+    }
+}
+
+@media(max-width:992px) {
+    .container {
+        /* background-color: #c12221; */
+        max-width: 700px;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        /* background-color: #441212; */
+        padding: 0px 10px;
+    }
+}
+
+@media(max-width:578px) {
+    .container {
+        /* background-color: #444555; */
+        padding: 0px 5px;
+    }
+}
