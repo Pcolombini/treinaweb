@@ -22,6 +22,10 @@
         /* background-color: #441212; */
         padding: 0px 10px;
     }
+
+    .img {
+        width: 100%;
+    }
 }
 
 @media(max-width:578px) {
