@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0px;
     padding: 0px;
 }
@@ -31,7 +32,7 @@ html, body {
 .content-flex {
     display: flex;
     gap: 1rem;
-    
+
 }
 
 .content-flex p {
@@ -44,7 +45,7 @@ html, body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    
+
 }
 
 .card {
@@ -58,6 +59,7 @@ html, body {
     transform: scale(0.9);
     cursor: pointer;
 }
+
 .card a {
     text-align: center;
 }
@@ -79,7 +81,11 @@ html, body {
 
     .nav-menu {
         padding: 20px;
-        
+
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -106,6 +112,7 @@ html, body {
     .content-flex p {
         padding: 0px;
     }
+
 }
 
 @media(max-width:578px) {
@@ -118,5 +125,10 @@ html, body {
         flex-direction: column;
         align-items: center;
         row-gap: 15px;
+    }
+
+    .cards {
+        grid-template-columns: minmax(200px, 400px);
+        justify-content: center;
     }
 }
