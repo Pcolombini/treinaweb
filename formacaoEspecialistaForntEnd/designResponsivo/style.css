@@ -1,7 +1,32 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
 .container {
     max-width: 1280px;
     margin: 0px auto;
 }
+
+/* Header */
+
+.nav-menu {
+    background-color: black;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 20px;
+}
+
+.nav-menu li {
+    color: white;
+}
+
+/* BreakPoints */
 
 @media(max-width: 1200px) {
     .container {
@@ -15,6 +40,11 @@
         /* background-color: #c12221; */
         max-width: 700px;
     }
+
+    .nav-menu {
+        padding: 20px;
+        
+    }
 }
 
 @media(max-width:768px) {
@@ -26,11 +56,22 @@
     .img {
         width: 100%;
     }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
 }
 
 @media(max-width:578px) {
     .container {
         /* background-color: #444555; */
         padding: 0px 5px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
     }
 }
