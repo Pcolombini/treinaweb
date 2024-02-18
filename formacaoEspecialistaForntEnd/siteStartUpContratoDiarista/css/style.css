@@ -1,5 +1,10 @@
 :root {
-    
+    --principal:#6B2AEE;
+    --secundaria:#02E7D9;
+    --terceira:#581ECD;
+    --color-texto-lgray:#e5e5e5;
+    --color-texto-dgray:#707070;
+    --color-texto-dois:#2C3A57;
 }
 
 html, body {
@@ -30,23 +35,23 @@ html, body {
 }
 
 .purple {
-    background-color: #6b2aee;
+    background-color: var(--principal);
     color: #fff;
     font-size: 12px;
 }
 
 .transparent {
     background-color: transparent;
-    color: #6b2aee;
+    color: var(--principal);
 }
 
 .elipse {
     width: 150px;
     height: 150px;
-    background-color: #00ead8;
+    background-color:var(--secundaria);
     border-radius: 50%;
     position: absolute;
     top: 1915px;
-    left:223px;
+    left:50px;
     motion-rotation: -180deg;
 }
