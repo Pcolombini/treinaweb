@@ -7,10 +7,38 @@
     <title>Projeto | Treinaweb Design Responsivo</title>
     <link rel="shortcut icon" href="../img/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="header-nav">
+        <!-- MENU MOBILE -->
+        <nav class="mobile-menu">
+            <ul class="mobile-list" id="nav-bar">
+                <a href="#">
+                    <li>Fotos</li>
+                </a>
+                <a href="#">
+                    <li>Produtos</li>
+                </a>
+                <a href="#">
+                    <li>Sobre</li>
+                </a>
+                <a href="#">
+                    <li>Contato</li>
+                </a>
+                <a href="#" class="close">
+                    <img src="../img/x-lg.svg" alt="icone fechamento">
+                </a>
+            </ul>
+            <a href="#nav-bar" class="burger">
+                <img src="../img/list.svg" alt="icone burger">
+            </a>
+        </nav>
+
+        <!-- MENU DESKTOP -->
         <nav class="nav-menu">
             <ul class="menu">
                 <a href="#">
@@ -26,143 +54,154 @@
                     <li>Contato</li>
                 </a>
             </ul>
-            <form action="" class="forms">
-                <img src="../img/search.svg" alt="">
-                <input type="text" name="buscar" id="buscar">
+            <div class="busca">
+                <div class="campo-busca">
+                    <img src="../img/search.svg" alt="">
+                    <input type="text" name="buscar" id="buscar">
+                </div>
                 <button class="btn-menu" type="submit">Buscar</button>
-            </form>
+            </div>
         </nav>
+        
     </header>
-    <main class="container">
-        <header class="titulo">
-            <h1>Minhas Fotos</h1>
-            <p>Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Mauris nec dolor in
-                eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Copo furadis é disculpa de
-                bebadis, arcu quam euismod magna. Ô gente finis, pode baixar uma ampolis que hoje é sexta-feris!</p>
-            <div class="btn-primarios">
-                <button class="btn-um">Mais Fotos</button>
-                <button class="btn-dois">Produtos</button>
+    <main>
+        <section class="container">
+            <header class="titulo">
+                <h1>Minhas Fotos</h1>
+                <p>Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Mauris nec dolor in
+                    eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Copo furadis é disculpa de
+                    bebadis, arcu quam euismod magna. Ô gente finis, pode baixar uma ampolis que hoje é sexta-feris!</p>
+                <div class="btn-primarios">
+                    <button class="btn-um">Mais Fotos</button>
+                    <button class="btn-dois">Produtos</button>
+                </div>
+            </header>
+        </section>
+        <section class="cards-menu">
+            <div class="container">
+                <div class="cards">
+                    <div class="card">
+                        <img src="../img/gato2.png" alt="gato" width="100%">
+                        <h2>Meu Trabalho</h2>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
+                            aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
+                            gravida magna, ut semper sapien.</p>
+                        <button class="btn-um">Ver Mais</button>
+                    </div>
+                    <div class="card">
+                        <img src="../img/gato2.png" alt="gato" width="100%">
+                        <h2>Meu Trabalho</h2>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
+                            aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
+                            gravida magna, ut semper sapien.</p>
+                        <button class="btn-um">Ver Mais</button>
+                    </div>
+                    <div class="card">
+                        <img src="../img/gato2.png" alt="gato" width="100%">
+                        <h2>Meu Trabalho</h2>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
+                            aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
+                            gravida magna, ut semper sapien.</p>
+                        <button class="btn-um">Ver Mais</button>
+                    </div>
+                    <div class="card">
+                        <img src="../img/gato2.png" alt="gato" width="100%">
+                        <h2>Meu Trabalho</h2>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
+                            aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
+                            gravida magna, ut semper sapien.</p>
+                        <button class="btn-um">Ver Mais</button>
+                    </div>
+                    <div class="card">
+                        <img src="../img/gato2.png" alt="gato" width="100%">
+                        <h2>Meu Trabalho</h2>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
+                            aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
+                            gravida magna, ut semper sapien.</p>
+                        <button class="btn-um">Ver Mais</button>
+                    </div>
+                    <div class="card">
+                        <img src="../img/gato2.png" alt="gato" width="100%">
+                        <h2>Meu Trabalho</h2>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
+                            aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
+                            gravida magna, ut semper sapien.</p>
+                        <button class="btn-um">Ver Mais</button>
+                    </div>
+                    <div class="card">
+                        <img src="../img/gato2.png" alt="gato" width="100%">
+                        <h2>Meu Trabalho</h2>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
+                            aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
+                            gravida magna, ut semper sapien.</p>
+                        <button class="btn-um">Ver Mais</button>
+                    </div>
+                    <div class="card">
+                        <img src="../img/gato2.png" alt="gato" width="100%">
+                        <h2>Meu Trabalho</h2>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
+                            aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
+                            gravida magna, ut semper sapien.</p>
+                        <button class="btn-um">Ver Mais</button>
+                    </div>
+                    <div class="card">
+                        <img src="../img/gato2.png" alt="gato" width="100%">
+                        <h2>Meu Trabalho</h2>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
+                            aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
+                            gravida magna, ut semper sapien.</p>
+                        <button class="btn-um">Ver Mais</button>
+                    </div>
+                    <div class="card">
+                        <img src="../img/gato2.png" alt="gato" width="100%">
+                        <h2>Meu Trabalho</h2>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
+                            aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
+                            gravida magna, ut semper sapien.</p>
+                        <button class="btn-um">Ver Mais</button>
+                    </div>
+                    <div class="card">
+                        <img src="../img/gato2.png" alt="gato" width="100%">
+                        <h2>Meu Trabalho</h2>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
+                            aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
+                            gravida magna, ut semper sapien.</p>
+                        <button class="btn-um">Ver Mais</button>
+                    </div>
+                    <div class="card">
+                        <img src="../img/gato2.png" alt="gato" width="100%">
+                        <h2>Meu Trabalho</h2>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
+                            aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
+                            gravida magna, ut semper sapien.</p>
+                        <button class="btn-um">Ver Mais</button>
+                    </div>
+                </div>
             </div>
-        </header>
-        <div class="cards">
-            <div class="card">
-                <img src="../img/gato2.png" alt="gato" width="100%">
-                <h2>Meu Trabalho</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
-                    aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
-                    gravida magna, ut semper sapien.</p>
-                <button class="btn-um">Ver Mais</button>
-            </div>
-            <div class="card">
-                <img src="../img/gato2.png" alt="gato" width="100%">
-                <h2>Meu Trabalho</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
-                    aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
-                    gravida magna, ut semper sapien.</p>
-                <button class="btn-um">Ver Mais</button>
-            </div>
-            <div class="card">
-                <img src="../img/gato2.png" alt="gato" width="100%">
-                <h2>Meu Trabalho</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
-                    aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
-                    gravida magna, ut semper sapien.</p>
-                <button class="btn-um">Ver Mais</button>
-            </div>
-            <div class="card">
-                <img src="../img/gato2.png" alt="gato" width="100%">
-                <h2>Meu Trabalho</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
-                    aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
-                    gravida magna, ut semper sapien.</p>
-                <button class="btn-um">Ver Mais</button>
-            </div>
-            <div class="card">
-                <img src="../img/gato2.png" alt="gato" width="100%">
-                <h2>Meu Trabalho</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
-                    aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
-                    gravida magna, ut semper sapien.</p>
-                <button class="btn-um">Ver Mais</button>
-            </div>
-            <div class="card">
-                <img src="../img/gato2.png" alt="gato" width="100%">
-                <h2>Meu Trabalho</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
-                    aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
-                    gravida magna, ut semper sapien.</p>
-                <button class="btn-um">Ver Mais</button>
-            </div>
-            <div class="card">
-                <img src="../img/gato2.png" alt="gato" width="100%">
-                <h2>Meu Trabalho</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
-                    aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
-                    gravida magna, ut semper sapien.</p>
-                <button class="btn-um">Ver Mais</button>
-            </div>
-            <div class="card">
-                <img src="../img/gato2.png" alt="gato" width="100%">
-                <h2>Meu Trabalho</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
-                    aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
-                    gravida magna, ut semper sapien.</p>
-                <button class="btn-um">Ver Mais</button>
-            </div>
-            <div class="card">
-                <img src="../img/gato2.png" alt="gato" width="100%">
-                <h2>Meu Trabalho</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
-                    aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
-                    gravida magna, ut semper sapien.</p>
-                <button class="btn-um">Ver Mais</button>
-            </div>
-            <div class="card">
-                <img src="../img/gato2.png" alt="gato" width="100%">
-                <h2>Meu Trabalho</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
-                    aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
-                    gravida magna, ut semper sapien.</p>
-                <button class="btn-um">Ver Mais</button>
-            </div>
-            <div class="card">
-                <img src="../img/gato2.png" alt="gato" width="100%">
-                <h2>Meu Trabalho</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
-                    aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
-                    gravida magna, ut semper sapien.</p>
-                <button class="btn-um">Ver Mais</button>
-            </div>
-            <div class="card">
-                <img src="../img/gato2.png" alt="gato" width="100%">
-                <h2>Meu Trabalho</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Per
-                    aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent. Nulla id
-                    gravida magna, ut semper sapien.</p>
-                <button class="btn-um">Ver Mais</button>
-            </div>
-        </div>
+        </section>
     </main>
     <footer>
-        <p>Esse site foi feito por <span><a href="https://paschoal-colombini.netlify.app/" target="_blank">Paschoal Colombini</a></span></p>
-        <hr>
-        <ul class="social-menu">
-            <a href="">
-                <li>
-                    <img src="../img/facebook.svg" alt="">
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <img src="../img/instagram.svg" alt="">
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <img src="../img/linkedin.svg" alt="">
-                </li>
-            </a>
-        </ul>
+        <section class="container">
+            <p>Esse site foi feito por <span><a href="https://paschoal-colombini.netlify.app/" target="_blank">Paschoal Colombini</a></span></p>
+            <hr>
+            <ul class="social-menu">
+                <a href="">
+                    <li>
+                        <img src="../img/facebook.svg" alt="">
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <img src="../img/instagram.svg" alt="">
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <img src="../img/linkedin.svg" alt="">
+                    </li>
+                </a>
+            </ul>
+        </section>
     </footer>
 </body>
 
