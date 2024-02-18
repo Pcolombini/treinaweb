@@ -1,0 +1,52 @@
+:root {
+    
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    max-width: 1440px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.btn-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.btns-navbar {
+    border: none;
+    border-radius: 35px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.purple {
+    background-color: #6b2aee;
+    color: #fff;
+    font-size: 12px;
+}
+
+.transparent {
+    background-color: transparent;
+    color: #6b2aee;
+}
+
+.elipse {
+    width: 150px;
+    height: 150px;
+    background-color: #00ead8;
+    border-radius: 50%;
+    position: absolute;
+    top: 1915px;
+    left:223px;
+    motion-rotation: -180deg;
+}
