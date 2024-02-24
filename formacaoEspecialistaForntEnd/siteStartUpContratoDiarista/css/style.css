@@ -6,6 +6,7 @@
     --color-texto-dgray: #707070;
     --color-texto-dois: #2C3A57;
     --btn: #fafafa;
+    --gradiente: linear-gradient(180deg, #00EAD8 0%, #6B2AEE 100%);
 }
 
 html,
@@ -16,13 +17,14 @@ body {
 
 }
 
-/* HEADER */
+
 .container {
     max-width: 1100px;
     margin: 0px auto;
     padding: 0px 15px;
 }
 
+/* HEADER */
 header>.container {
     box-shadow: 1px 0px 15px var(--color-texto-lgray);
 }
@@ -130,9 +132,11 @@ span {
 
 .principal-image-diarista {
     position: relative;
+    z-index: 100;
 }
 
-.principal-image-diarista::after, .principal-image-diarista::before {
+.principal-image-diarista::after,
+.principal-image-diarista::before {
     content: '';
     position: absolute;
     border-radius: 50%;
@@ -143,7 +147,6 @@ span {
 
     width: 131px;
     height: 131px;
-
     background-color: var(--principal);
     top: 89px;
     left: 395px;
@@ -153,10 +156,100 @@ span {
 
     width: 31px;
     height: 31px;
- 
+
     background-color: #F0F0F0;
     bottom: 35px;
     z-index: 1000;
+}
+
+/* secundario */
+
+.meio {
+    
+}
+
+.secundario {
+    background: var(--gradiente);
+    position: relative;
+    top: -71px;
+}
+
+.secundario .wave {
+    bottom: -10px;
+    position: relative;
+    z-index: 100;
+}
+
+.container-secundario {
+    height: 660px;
+
+}
+
+.container-secundario>h2 {
+    position: relative;
+    top: 160px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    /* margin-top: 300px; */
+}
+
+.container-secundario>hr {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 96px;
+    height: 5px;
+    position: relative;
+    top: 160px;
+}
+
+.topins {
+    position: relative;
+    top: 180px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+}
+
+.topics {
+    /* padding: 30px; */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.circulo {
+    margin: 10px;
+    border: solid #fff 3px;
+    border-radius: 50%;
+    width: 86px;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo img {
+    margin: 20px;
+}
+
+.text-topics {
+    padding: 10px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.16px;
+}
+
+
+.text-topics span {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.16px;
 }
 
 /* ELIPSES */
